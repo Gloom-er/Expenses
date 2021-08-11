@@ -1,0 +1,2 @@
+Flask-ClickHouse==1.0.1
+Flask==2.0.1

@@ -1,0 +1,67 @@
+{% extends 'main.html' %}
+
+{% block title %}
+    Добавлене расходов
+{% endblock %}
+
+{% block body %}
+    <h1>Добавление расходов</h1>
+    <div class="container">
+        <form method="post">
+            <div class="field">
+                <input type="text" placeholder="Введите название" name="name" id="name" size="20">
+                <select name="row_1" id="row_1">
+                    <option value="">Выберите категорию</option>
+                    <option value="Продукты">Продукты</option>
+                    <option value="Транспорт">Транспорт</option>
+                    <option value="Кафе/Ресторан/Бар">Кафе/Ресторан/Бар</option>
+                    <option value="Досуг и развлечение">Досуг и развлечение</option>
+                    <option value="Одежда">Одежда</option>
+                    <option value="Медицина">Медицина</option>
+                    <option value="Обучение">Обучение</option>
+                    <option value="Оплата жилья">Оплата жилья</option>
+                    <option value="Прочее">Прочее</option>
+                </select>
+                <input type="number" placeholder="Сумма" name="price" id="price">
+                <textarea name="comment" id="comment" placeholder="Комментарий" cols="30" rows="3"></textarea>
+            </div>
+            <div class="field">
+                <input type="text" placeholder="Введите название" name="name" id="name">
+                <select name="row_2" id="row_2">
+                    <option value="">Выберите категорию</option>
+                    <option value="Продукты">Продукты</option>
+                    <option value="Транспорт">Транспорт</option>
+                    <option value="Кафе/Ресторан/Бар">Кафе/Ресторан/Бар</option>
+                    <option value="Досуг и развлечение">Досуг и развлечение</option>
+                    <option value="Одежда">Одежда</option>
+                    <option value="Медицина">Медицина</option>
+                    <option value="Обучение">Обучение</option>
+                    <option value="Оплата жилья">Оплата жилья</option>
+                    <option value="Прочее">Прочее</option>
+                </select>
+                <input type="number" placeholder="Сумма" name="price" id="price">
+                <textarea name="comment" id="comment" placeholder="Комментарий" cols="30" rows="3"></textarea>
+            </div>
+            <div class="field">
+                <input type="text" placeholder="Введите название" name="name" id="name">
+                <select name="row_2" id="row_2">
+                    <option value="">Выберите категорию</option>
+                    <option value="Продукты">Продукты</option>
+                    <option value="Транспорт">Транспорт</option>
+                    <option value="Кафе/Ресторан/Бар">Кафе/Ресторан/Бар</option>
+                    <option value="Досуг и развлечение">Досуг и развлечение</option>
+                    <option value="Одежда">Одежда</option>
+                    <option value="Медицина">Медицина</option>
+                    <option value="Обучение">Обучение</option>
+                    <option value="Оплата жилья">Оплата жилья</option>
+                    <option value="Прочее">Прочее</option>
+                </select>
+                <input type="number" placeholder="Сумма" name="price" id="price">
+                <textarea name="comment" id="comment" placeholder="Комментарий" cols="30" rows="3"></textarea>
+            </div>
+            <div class="submit">
+                <input type="submit" class="send" value="Отправить">
+            </div>
+        </form>
+    </div>
+{% endblock %}

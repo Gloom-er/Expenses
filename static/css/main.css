@@ -1,0 +1,22 @@
+.field{
+    padding: 45px;
+    text-align: center;
+}
+.submit{
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+.send{
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.send:hover {
+  background-color: #555555;
+  color: white;
+}
