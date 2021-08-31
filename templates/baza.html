@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+
+{% block title %}
+    База данных
+{% endblock %}
+
+{% block body %}
+    <h1>База данных</h1>
+    <div class="bd">
+        <a class='crossing' href="/">Добавление расходов</a>
+    </div>
+    <div class="table_bd">
+        <table>
+            <tr>
+                <th>Имя</th>
+                <th>Катеория</th>
+                <th>Сумма</th>
+                <th>Комментарий</th>
+            </tr>
+            {% for row in rows %}
+                <tr>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                    <td>{{ row[4] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+{% endblock %}
